@@ -14,7 +14,6 @@ class App extends Component {
         };
 
         let countResponse = await fetch('/count', options);
-        console.log(countResponse)
         let count = await countResponse.json();
 
         this.setState({
